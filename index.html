@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Snake Spiel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Retro Snake</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Über</a></li>
+                <li><a href="#game">Spiel</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Willkommen zu Retro Snake!</h2>
+            <p>Spiele ein klassisches Snake-Spiel im Retro-Stil mit Touch-Steuerung!</p>
+            <a href="#game" class="btn">Spiel starten</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Über das Spiel</h2>
+            <p>Ein einfaches Snake-Spiel für Mobilgeräte mit Retro-Design.</p>
+        </div>
+    </section>
+
+    <section id="game" class="game-section">
+        <div class="container">
+            <h2>Snake Spiel</h2>
+            <div class="score">Punkte: <span id="score">0</span></div>
+            <canvas id="gameCanvas"></canvas>
+            <div id="gameOver" class="game-over hidden">
+                <h2>Game Over</h2>
+                <p>Deine Punktzahl: <span id="finalScore">0</span></p>
+                <button id="restartBtn" class="btn">Neustart</button>
+            </div>
+            <div class="controls">
+                <button id="upBtn" class="control-btn">↑</button>
+                <div class="horizontal-controls">
+                    <button id="leftBtn" class="control-btn">←</button>
+                    <button id="rightBtn" class="control-btn">→</button>
+                </div>
+                <button id="downBtn" class="control-btn">↓</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
